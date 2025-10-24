@@ -202,3 +202,71 @@ body.modo-oscuro .galeria .card {
   color: #f1f1f1;
 }
 
+/* Estilos para Bitácora */
+.timeline {
+  position: relative;
+  margin-top: 1.2rem;
+  padding-left: 2rem;
+  border-left: 3px dashed var(--color-acento);
+}
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 1.5rem;
+  background: var(--color-fondo-claro);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 0.9rem 1rem;
+  transition: transform 0.25s ease, box-shadow 0.25s ease;
+}
+
+.timeline-item:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+.timeline-icon {
+  position: absolute;
+  left: -2.2rem;
+  top: 50%;
+  transform: translateY(-50%);
+  background: linear-gradient(135deg, var(--color-secundario), var(--color-acento));
+  color: white;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  font-size: 1.1rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+.timeline-item p {
+  margin: 0;
+  color: var(--color-texto-principal);
+  font-family: var(--font-alt);
+  line-height: 1.4;
+}
+
+body.modo-oscuro .timeline-item {
+  background: transparent; /* mismo color del fondo */
+  color: #f8f5ff;
+  box-shadow: 0 8px 20px rgba(161, 72, 221, 0.08);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+}
+
+body.modo-oscuro .timeline {
+  border-color: #a78bfa;
+}
+
+
+body.modo-oscuro .timeline-item p {
+  color: #f8f5ff;
+}
+
+body.modo-oscuro .timeline-item:hover {
+  box-shadow: 0 6px 20px rgba(255, 255, 255, 0.12);
+  transform: translateY(-2px);
+}
+
