@@ -6,7 +6,7 @@
     "año": 2025,
     "premio": "Cannes",
     "detalle": "Palma de Oro 2025",
-    "poster": "https://via.placeholder.com/200x300?text=Anora",
+    "poster": "public/images/poster1.jpg",
     "rating": 8.1
   },
   {
@@ -16,7 +16,7 @@
     "año": 2024,
     "premio": "Oscar",
     "detalle": "Oscar 2024 – Mejor Película",
-    "poster": "https://via.placeholder.com/200x300?text=Oppenheimer",
+    "poster": "public/images/poster2.jpg",
     "rating": 9.0
   },
   {
@@ -26,7 +26,7 @@
     "año": 2023,
     "premio": "Cannes",
     "detalle": "Palma de Oro 2023",
-    "poster": "https://via.placeholder.com/200x300?text=Anatomy+of+a+Fall",
+    "poster": "public/images/poster3.jpg",
     "rating": 8.2
   },
   {
@@ -36,7 +36,7 @@
     "año": 2022,
     "premio": "Oscar",
     "detalle": "Oscar 2023 – Mejor Película",
-    "poster": "https://via.placeholder.com/200x300?text=Everything+Everywhere",
+    "poster": "public/images/poster4.jpg",
     "rating": 8.0
   },
   {
@@ -46,7 +46,7 @@
     "año": 2021,
     "premio": "Globo de Oro",
     "detalle": "Globo de Oro 2022 – Mejor Película (Drama)",
-    "poster": "https://via.placeholder.com/200x300?text=Power+of+the+Dog",
+    "poster": "public/images/poster5.jpg",
     "rating": 7.7
   },
   {
@@ -56,7 +56,7 @@
     "año": 2019,
     "premio": "Oscar",
     "detalle": "Oscar 2020 – Mejor Película",
-    "poster": "https://via.placeholder.com/200x300?text=Parasite",
+    "poster": "public/images/poster6.jpg",
     "rating": 8.6
   },
   {
@@ -66,7 +66,7 @@
     "año": 2021,
     "premio": "Cannes",
     "detalle": "Palma de Oro 2021",
-    "poster": "https://via.placeholder.com/200x300?text=Titane",
+    "poster": "public/images/poster7.jpg",
     "rating": 7.1
   },
   {
@@ -76,7 +76,7 @@
     "año": 2019,
     "premio": "Globo de Oro",
     "detalle": "Globo de Oro 2020 – Mejor Película (Drama)",
-    "poster": "https://via.placeholder.com/200x300?text=1917",
+    "poster": "public/images/poster8.jpg",
     "rating": 8.3
   },
   {
@@ -86,7 +86,7 @@
     "año": 2018,
     "premio": "Oscar",
     "detalle": "Oscar 2019 – Mejor Película",
-    "poster": "https://via.placeholder.com/200x300?text=Green+Book",
+    "poster": "public/images/poster9.jpg",
     "rating": 8.2
   },
   {
@@ -96,7 +96,7 @@
     "año": 2018,
     "premio": "Cannes",
     "detalle": "Palma de Oro 2018",
-    "poster": "https://via.placeholder.com/200x300?text=Shoplifters",
+    "poster": "public/images/poster10.jpg",
     "rating": 8.0
   },
   {
@@ -106,7 +106,7 @@
     "año": 2020,
     "premio": "Oscar",
     "detalle": "Oscar 2021 – Mejor Película",
-    "poster": "https://via.placeholder.com/200x300?text=Nomadland",
+    "poster": "public/images/poster11.jpg",
     "rating": 7.4
   },
   {
@@ -116,7 +116,7 @@
     "año": 2017,
     "premio": "Cannes",
     "detalle": "Palma de Oro 2017",
-    "poster": "https://via.placeholder.com/200x300?text=The+Square",
+    "poster": "public/images/poster12.jpg",
     "rating": 7.3
   },
   {
@@ -126,7 +126,7 @@
     "año": 2016,
     "premio": "Oscar",
     "detalle": "Oscar 2017 – Mejor Película",
-    "poster": "https://via.placeholder.com/200x300?text=Moonlight",
+    "poster": "public/images/poster13.jpg",
     "rating": 7.4
   },
   {
@@ -136,7 +136,7 @@
     "año": 2011,
     "premio": "Oscar",
     "detalle": "Oscar 2012 – Mejor Película",
-    "poster": "https://via.placeholder.com/200x300?text=The+Artist",
+    "poster": "public/images/poster14.jpg",
     "rating": 7.9
   },
   {
@@ -146,7 +146,7 @@
     "año": 2021,
     "premio": "BAFTA",
     "detalle": "BAFTA 2022 – Mejor Película Internacional",
-    "poster": "https://via.placeholder.com/200x300?text=Drive+My+Car",
+    "poster": "public/images/poster15.jpg",
     "rating": 7.8
   },
   {
@@ -156,7 +156,7 @@
     "año": 2018,
     "premio": "BAFTA",
     "detalle": "BAFTA 2019 – Mejor Película Británica",
-    "poster": "https://via.placeholder.com/200x300?text=The+Favourite",
+    "poster": "public/images/poster16.jpg",
     "rating": 7.6
   },
   {
@@ -166,7 +166,7 @@
     "año": 2014,
     "premio": "BAFTA",
     "detalle": "BAFTA 2015 – Mejor Película",
-    "poster": "https://via.placeholder.com/200x300?text=Boyhood",
+    "poster": "public/images/poster17.jpg",
     "rating": 7.9
   },
   {
@@ -176,7 +176,7 @@
     "año": 2016,
     "premio": "Globo de Oro",
     "detalle": "Globo de Oro 2017 – Mejor Película (Comedia/Musical)",
-    "poster": "https://via.placeholder.com/200x300?text=La+La+Land",
+    "poster": "public/images/poster18.jpg",
     "rating": 8.0
   },
   {
@@ -186,7 +186,7 @@
     "año": 2011,
     "premio": "Cannes",
     "detalle": "Palma de Oro 2011",
-    "poster": "https://via.placeholder.com/200x300?text=Tree+of+Life",
+    "poster": "public/images/poster19.jpg",
     "rating": 7.1
   },
   {
@@ -196,7 +196,7 @@
     "año": 2010,
     "premio": "Globo de Oro",
     "detalle": "Globo de Oro 2011 – Mejor Película (Drama)",
-    "poster": "https://via.placeholder.com/200x300?text=Social+Network",
+    "poster": "public/images/poster20.jpg",
     "rating": 7.8
   }
 ]
