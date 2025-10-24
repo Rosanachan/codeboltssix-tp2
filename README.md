@@ -1,16 +1,62 @@
-# React + Vite
+# Codebolts Six
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## IFTS29 - Front End - TP2  
+**Grupo 21**
+---
+### Integrantes
 
-Currently, two official plugins are available:
+- **Neuyin Herrera** — *(Neuyin)*  
+- **Erick Romero** — *(Erick)*  
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## Título del Proyecto
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+**Codebolts Six**  
+En nuestro sitio web conocerás más sobre nosotros y sobre nuestros intereses cinéfilos.
 
-## Expanding the ESLint configuration
+---
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+## 📝 Descripción del proyecto
+
+**Codebolts Six** es un proyecto ...  
+
+Cada perfil presenta:
+- Información personal y profesional del desarrollador.
+- Habilidades técnicas y blandas.
+- Películas y música favoritas.
+
+Además, API...
+
+---
+
+## Tecnologías Utilizadas
+
+- **Vite** — Entorno de desarrollo rápido para React.  
+- **React.js** — Librería principal para la construcción de componentes.  
+- **React Router DOM** — Navegación entre vistas y perfiles.  
+- **CSS Modules / Stylesheets** — Estilos personalizados por integrante.  
+- **JavaScript (ES6+)** — Lógica y manejo de datos.  
+- **API** — Fuente de datos para componentes dinámicos.  
+
+---
+
+## Estructura de Archivos
+
+Codeboltssix-tp2/\
+│\
+├── public/\
+│\
+└── src/\
+├── assets/\
+│ └── img/
+│\
+├── components/ # Componentes principales del sitio\
+│ ├── 
+│ └── jsx\
+│\
+├── 
+├── 
+├── 
+├── 
+└── \
