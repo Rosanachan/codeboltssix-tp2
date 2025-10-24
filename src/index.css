@@ -1,10 +1,172 @@
+/* === Paleta base (Neuyin) === */
 :root {
-  color: rgba(255, 255, 255, 0.87);
-  background-color: #242424;
+  --color-fondo: #efbeec;                 /* rosa pastel */
+  --color-fondo-claro: #fff;
+  --color-texto-principal: #210635;       /* púrpura oscuro */
+  --color-secundario: #7B337E;            /* morado */
+  --color-acento: #6667AB;                /* lavanda */
+  --radius: 12px;
+  --shadow: 0 4px 12px rgba(0,0,0,0.12);
+  --font-main: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
+  --font-alt: 'Roboto', system-ui, -apple-system, Segoe UI, Arial, sans-serif;
+  --sidebar-w: 260px;
 }
 
-*{
-  margin: 0;
+/* aplica a body y textos generales */
+body {
+  background: var(--color-fondo);
+  color: var(--color-texto-principal);
+  font-family: var(--font-main);
+}
+
+/* tarjetas y elementos elevables */
+.card {
+  background: var(--color-fondo-claro);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1.5rem;
+}
+
+/* botones “neuyin-like” */
+button,
+.btn {
+  background: linear-gradient(135deg, var(--color-secundario), var(--color-acento));
+  color: #fff;
+  border: 0;
+  border-radius: 999px;
+  padding: .6rem 1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform .15s ease, opacity .2s ease;
+}
+button:hover,.btn:hover { transform: translateY(-1px); opacity:.95 }
+
+/* modo oscuro con cielo estrellado */
+body.modo-oscuro {
+  background: linear-gradient(135deg, #3e3965, #000000);
+  color: #f1f1f1;
+}
+body.modo-oscuro .card { background: #2a2a2a; }
+body.modo-oscuro .sidebar { background: #1f1f2b; color: #f1f1f1; }
+
+.layout {
+  display: grid;
+  grid-template-columns: var(--sidebar-w) 1fr;
+  min-height: 100vh;
+}
+
+.content {
+  padding: 2rem;
+}
+
+/* === SIDEBAR MODERNO === */
+.sidebar {
+  background-color: var(--color-fondo-claro);
+  color: var(--color-texto-principal);
+  padding: 1.5rem;
+  border-right: 1px solid rgba(0, 0, 0, 0.1);
+  box-shadow: var(--shadow);
+  height: 100vh;
+  position: sticky;
+  top: 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  z-index: 100;
+  transition: all 0.3s ease;
+}
+
+.sidebar .logo {
+  font-size: 1.3rem;
+  font-weight: 700;
+  color: var(--color-secundario);
+  margin-bottom: 1.5rem;
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* Botón hamburguesa */
+.menu-toggle {
+  display: none;
+  background: linear-gradient(135deg, var(--color-secundario), var(--color-acento));
+  color: white;
+  border: none;
+  border-radius: 8px;
+  padding: 0.4rem 0.8rem;
+  font-size: 1.2rem;
+  cursor: pointer;
+  margin-bottom: 1rem;
+  transition: opacity 0.2s ease;
+}
+.menu-toggle:hover { opacity: 0.9; }
+
+.nav ul {
+  list-style: none;
   padding: 0;
-  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.nav a {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  text-decoration: none;
+  color: var(--color-texto-principal);
+  font-weight: 500;
+  padding: 0.6rem 0.8rem;
+  border-radius: var(--radius);
+  transition: background-color 0.25s ease, color 0.25s ease;
+}
+
+.nav a:hover,
+.nav a.active {
+  background: linear-gradient(135deg, var(--color-secundario), var(--color-acento));
+  color: #fff;
+  transform: translateX(2px);
+}
+
+/* === RESPONSIVE === */
+@media (max-width: 900px) {
+  .sidebar {
+    height: auto;
+    position: relative;
+    border-right: none;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  }
+
+  .menu-toggle {
+    display: block;
+    margin: 0 auto 1rem;
+  }
+
+  .nav {
+    display: none;
+    text-align: center;
+  }
+
+  .nav.show {
+    display: block;
+    animation: fadeIn 0.3s ease;
+  }
+}
+
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* Ajuste modo oscuro */
+body.modo-oscuro .sidebar {
+  background: #2b244d;
+  border-right: none;
+}
+body.modo-oscuro .nav a {
+  color: #f1f1f1;
+}
+body.modo-oscuro .nav a:hover,
+body.modo-oscuro .nav a.active {
+  background: linear-gradient(135deg, #ff80ab, #c77dff);
+  color: #fff;
 }
