@@ -170,3 +170,35 @@ body.modo-oscuro .nav a.active {
   background: linear-gradient(135deg, #ff80ab, #c77dff);
   color: #fff;
 }
+
+/*Estilos para items JSON*/
+/* Tarjetas de películas */
+.galeria .card {
+  background: var(--color-fondo-claro);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow);
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.galeria .card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
+}
+
+/* Ajuste de imágenes */
+.galeria img {
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease;
+}
+
+.galeria img:hover {
+  transform: scale(1.05);
+}
+
+/* Modo oscuro */
+body.modo-oscuro .galeria .card {
+  background-color: #2b244d;
+  color: #f1f1f1;
+}
+

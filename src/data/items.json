@@ -1,0 +1,202 @@
+[
+  {
+    "id": 1,
+    "titulo": "Anora",
+    "director": "Sean Baker",
+    "año": 2025,
+    "premio": "Cannes",
+    "detalle": "Palma de Oro 2025",
+    "poster": "https://via.placeholder.com/200x300?text=Anora",
+    "rating": 8.1
+  },
+  {
+    "id": 2,
+    "titulo": "Oppenheimer",
+    "director": "Christopher Nolan",
+    "año": 2024,
+    "premio": "Oscar",
+    "detalle": "Oscar 2024 – Mejor Película",
+    "poster": "https://via.placeholder.com/200x300?text=Oppenheimer",
+    "rating": 9.0
+  },
+  {
+    "id": 3,
+    "titulo": "Anatomy of a Fall",
+    "director": "Justine Triet",
+    "año": 2023,
+    "premio": "Cannes",
+    "detalle": "Palma de Oro 2023",
+    "poster": "https://via.placeholder.com/200x300?text=Anatomy+of+a+Fall",
+    "rating": 8.2
+  },
+  {
+    "id": 4,
+    "titulo": "Everything Everywhere All at Once",
+    "director": "Daniel Kwan & Daniel Scheinert",
+    "año": 2022,
+    "premio": "Oscar",
+    "detalle": "Oscar 2023 – Mejor Película",
+    "poster": "https://via.placeholder.com/200x300?text=Everything+Everywhere",
+    "rating": 8.0
+  },
+  {
+    "id": 5,
+    "titulo": "The Power of the Dog",
+    "director": "Jane Campion",
+    "año": 2021,
+    "premio": "Globo de Oro",
+    "detalle": "Globo de Oro 2022 – Mejor Película (Drama)",
+    "poster": "https://via.placeholder.com/200x300?text=Power+of+the+Dog",
+    "rating": 7.7
+  },
+  {
+    "id": 6,
+    "titulo": "Parasite",
+    "director": "Bong Joon-ho",
+    "año": 2019,
+    "premio": "Oscar",
+    "detalle": "Oscar 2020 – Mejor Película",
+    "poster": "https://via.placeholder.com/200x300?text=Parasite",
+    "rating": 8.6
+  },
+  {
+    "id": 7,
+    "titulo": "Titane",
+    "director": "Julia Ducournau",
+    "año": 2021,
+    "premio": "Cannes",
+    "detalle": "Palma de Oro 2021",
+    "poster": "https://via.placeholder.com/200x300?text=Titane",
+    "rating": 7.1
+  },
+  {
+    "id": 8,
+    "titulo": "1917",
+    "director": "Sam Mendes",
+    "año": 2019,
+    "premio": "Globo de Oro",
+    "detalle": "Globo de Oro 2020 – Mejor Película (Drama)",
+    "poster": "https://via.placeholder.com/200x300?text=1917",
+    "rating": 8.3
+  },
+  {
+    "id": 9,
+    "titulo": "Green Book",
+    "director": "Peter Farrelly",
+    "año": 2018,
+    "premio": "Oscar",
+    "detalle": "Oscar 2019 – Mejor Película",
+    "poster": "https://via.placeholder.com/200x300?text=Green+Book",
+    "rating": 8.2
+  },
+  {
+    "id": 10,
+    "titulo": "Shoplifters",
+    "director": "Hirokazu Kore-eda",
+    "año": 2018,
+    "premio": "Cannes",
+    "detalle": "Palma de Oro 2018",
+    "poster": "https://via.placeholder.com/200x300?text=Shoplifters",
+    "rating": 8.0
+  },
+  {
+    "id": 11,
+    "titulo": "Nomadland",
+    "director": "Chloé Zhao",
+    "año": 2020,
+    "premio": "Oscar",
+    "detalle": "Oscar 2021 – Mejor Película",
+    "poster": "https://via.placeholder.com/200x300?text=Nomadland",
+    "rating": 7.4
+  },
+  {
+    "id": 12,
+    "titulo": "The Square",
+    "director": "Ruben Östlund",
+    "año": 2017,
+    "premio": "Cannes",
+    "detalle": "Palma de Oro 2017",
+    "poster": "https://via.placeholder.com/200x300?text=The+Square",
+    "rating": 7.3
+  },
+  {
+    "id": 13,
+    "titulo": "Moonlight",
+    "director": "Barry Jenkins",
+    "año": 2016,
+    "premio": "Oscar",
+    "detalle": "Oscar 2017 – Mejor Película",
+    "poster": "https://via.placeholder.com/200x300?text=Moonlight",
+    "rating": 7.4
+  },
+  {
+    "id": 14,
+    "titulo": "The Artist",
+    "director": "Michel Hazanavicius",
+    "año": 2011,
+    "premio": "Oscar",
+    "detalle": "Oscar 2012 – Mejor Película",
+    "poster": "https://via.placeholder.com/200x300?text=The+Artist",
+    "rating": 7.9
+  },
+  {
+    "id": 15,
+    "titulo": "Drive My Car",
+    "director": "Ryusuke Hamaguchi",
+    "año": 2021,
+    "premio": "BAFTA",
+    "detalle": "BAFTA 2022 – Mejor Película Internacional",
+    "poster": "https://via.placeholder.com/200x300?text=Drive+My+Car",
+    "rating": 7.8
+  },
+  {
+    "id": 16,
+    "titulo": "The Favourite",
+    "director": "Yorgos Lanthimos",
+    "año": 2018,
+    "premio": "BAFTA",
+    "detalle": "BAFTA 2019 – Mejor Película Británica",
+    "poster": "https://via.placeholder.com/200x300?text=The+Favourite",
+    "rating": 7.6
+  },
+  {
+    "id": 17,
+    "titulo": "Boyhood",
+    "director": "Richard Linklater",
+    "año": 2014,
+    "premio": "BAFTA",
+    "detalle": "BAFTA 2015 – Mejor Película",
+    "poster": "https://via.placeholder.com/200x300?text=Boyhood",
+    "rating": 7.9
+  },
+  {
+    "id": 18,
+    "titulo": "La La Land",
+    "director": "Damien Chazelle",
+    "año": 2016,
+    "premio": "Globo de Oro",
+    "detalle": "Globo de Oro 2017 – Mejor Película (Comedia/Musical)",
+    "poster": "https://via.placeholder.com/200x300?text=La+La+Land",
+    "rating": 8.0
+  },
+  {
+    "id": 19,
+    "titulo": "The Tree of Life",
+    "director": "Terrence Malick",
+    "año": 2011,
+    "premio": "Cannes",
+    "detalle": "Palma de Oro 2011",
+    "poster": "https://via.placeholder.com/200x300?text=Tree+of+Life",
+    "rating": 7.1
+  },
+  {
+    "id": 20,
+    "titulo": "The Social Network",
+    "director": "David Fincher",
+    "año": 2010,
+    "premio": "Globo de Oro",
+    "detalle": "Globo de Oro 2011 – Mejor Película (Drama)",
+    "poster": "https://via.placeholder.com/200x300?text=Social+Network",
+    "rating": 7.8
+  }
+]

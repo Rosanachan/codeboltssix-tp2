@@ -30,7 +30,7 @@ export default function Sidebar() {
             <NavLink to="/neuyin" onClick={() => setOpen(false)}>👩‍💻 Neuyin</NavLink>
           </li>
           <li>
-            <NavLink to="/json" onClick={() => setOpen(false)}>📂 Datos (JSON)</NavLink>
+            <NavLink to="/json" onClick={() => setOpen(false)}>🏆 Películas (JSON)</NavLink>
           </li>
           <li>
             <NavLink to="/api" onClick={() => setOpen(false)}>🌐 Datos (API)</NavLink>
