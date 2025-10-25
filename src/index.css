@@ -232,6 +232,10 @@ body.modo-oscuro .nav a.active {
   margin-bottom: 1.5rem;
 }
 
+.cardmain {
+text-align: center;
+}
+
 /* Contenedor de integrantes */
 .integrantes {
   display: flex;
@@ -437,4 +441,142 @@ body.modo-oscuro .site-footer {
   background-color: transparent;
   color: var(--color-texto-claro);
   border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
+
+/* === PERFIL NEUYIN === */
+/* === PERFIL NEUYIN === */
+
+.perfil-neuyin {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+/* 🔹 HERO */
+.hero-content {
+  text-align: center;
+}
+
+.foto-perfil {
+  width: 200px;
+  border-radius: 50%;
+  margin-bottom: 1rem;
+  box-shadow: 0 0 15px rgba(255, 182, 193, 0.5);
+}
+
+.titulo-neuyin {
+  color: var(--color-secundario);
+  margin-bottom: 0.5rem;
+}
+
+/* 🔹 HABILIDADES */
+.habilidades-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.habilidades-texto {
+  flex: 1;
+  min-width: 280px;
+}
+
+.habilidades-cards {
+  flex: 2;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 1.2rem;
+}
+
+.glass-card {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease;
+}
+
+.glass-card:hover {
+  transform: translateY(-5px);
+}
+
+/* 🔹 PELÍCULAS */
+.peliculas {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.peliculas-grid {
+  display: flex;
+  gap: 1.5rem;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.pelicula-card {
+  width: 200px;
+  height: 280px;
+  perspective: 1000px;
+}
+
+.pelicula-inner {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.pelicula-card:hover .pelicula-inner {
+  transform: rotateY(180deg);
+}
+
+.pelicula-front,
+.pelicula-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  border-radius: 15px;
+  backface-visibility: hidden;
+  overflow: hidden;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.15);
+}
+
+.pelicula-front img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.pelicula-back {
+  background: var(--color-secundario);
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+  transform: rotateY(180deg);
+  text-align: center;
+  font-size: 0.9rem;
+}
+
+/* 🔹 MÚSICA */
+.spotify-grid {
+  display: flex;
+  gap: 1.5rem;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.spotify-grid iframe {
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
 }

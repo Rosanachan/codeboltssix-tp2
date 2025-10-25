@@ -52,7 +52,7 @@ export default function Sidebar() {
             <NavLink to="/json" onClick={() => setOpen(false)}>🏆 Películas (JSON)</NavLink>
           </li>
           <li>
-            <NavLink to="/api" onClick={() => setOpen(false)}>⛩️ Pelis Animé (API)</NavLink>
+            <NavLink to="/api" onClick={() => setOpen(false)}>⛩️ Pelis Anime (API)</NavLink>
           </li>
         </ul>
       </nav>

@@ -80,7 +80,7 @@ export default function Bitacora() {
 
           <div className="timeline-item">
             <div className="timeline-icon">🌙</div>
-            <p>18/10/25 — Implementación del modo oscuro con cambio de tema global.</p>
+            <p>18/10/25 — Implementación del modo oscuro con cambio de tema global. Elección de API.</p>
           </div>
 
           <div className="timeline-item">
@@ -112,7 +112,7 @@ export default function Bitacora() {
         <p>
           Se eliminaron páginas duplicadas y se creó una estructura de componentes reutilizables.
           Se incorporó un <b>modo oscuro</b>, un <b>sidebar dinámico</b> y una sección de <b>películas premiadas</b> leídas desde un archivo JSON, demostrando manejo de datos locales.
-          Además, se planifica integrar una <b>API pública de cine</b> para el TP3.
+          Además, se planifica integrar una <b>API pública de cine japonés</b> para el TP3.
         </p>
 
         <h4 style={{ marginTop: "1rem" }}>💭 Reflexión General</h4>
@@ -133,7 +133,7 @@ export default function Bitacora() {
           <li>👨‍💻 Erick – Perfil personal y habilidades.</li>
           <li>👩‍💻 Neuyin – Perfil personal con identidad visual base del diseño.</li>
           <li>🏆 Películas (JSON) – Películas premiadas mostradas dinámicamente.</li>
-          <li>🌐 API – Conexión con datos externos del cine (en desarrollo).</li>
+          <li>⛩️ API – Conexión con datos externos de anime.</li>
           
         </ul>
       </div>

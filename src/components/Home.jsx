@@ -14,7 +14,7 @@ export default function Home() {
 
   return (
     <section className="home">
-      <div className="card">
+      <div className="card cardmain">
         <div className="logo-home-container">
           <img
             src={isDarkMode ? "/images/logooscuro.png" : "/images/logo.png"}
@@ -25,7 +25,7 @@ export default function Home() {
         
         <h1>Desarrollo Front End — TP2 SPA React</h1>
         <p style={{fontFamily:'var(--font-alt)'}}>
-          Proyecto migrado desde TP1. Equipo: <b>Neuyin</b> & <b>Erick</b>.  
+          Proyecto migrado desde TP1. Equipo: <b>Neuyin</b> & <b>Erick</b>. De cinéfilos, para cinéfilos. 
         </p>
       </div>
 
