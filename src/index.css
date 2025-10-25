@@ -24,7 +24,8 @@ body {
   background: var(--color-fondo-claro);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 1.5rem;
+  padding: 1.5rem; 
+  margin: 15px;                    
 }
 
 button,
@@ -410,6 +411,7 @@ body.modo-oscuro .timeline-item:hover {
 }
 
 /* Estilos para Footer */
+
 .site-footer {
   text-align: center;
   padding: 1.2rem 0;
@@ -418,7 +420,7 @@ body.modo-oscuro .timeline-item:hover {
   color: var(--color-secundario);
   border-top: 1px solid rgba(0, 0, 0, 0.1);
   transition: background 0.3s ease, color 0.3s ease;
-  margin-top: auto; /* 👈 asegura que quede al fondo si el contenido es corto */
+  margin-top: auto;
 }
 
 /* Texto principal y secundario */
