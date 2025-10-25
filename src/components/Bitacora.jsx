@@ -55,12 +55,12 @@ export default function Bitacora() {
 
           <div className="timeline-item">
             <div className="timeline-icon">🎨</div>
-            <p>05/10/25 — Se define una nueva paleta pastel basada en el perfil de Neuyin.</p>
+            <p>05/10/25 — Se define una nueva paleta de colores.</p>
           </div>
 
           <div className="timeline-item">
             <div className="timeline-icon">🪞</div>
-            <p>07/10/25 — Se diseña el nuevo logo y se actualiza la identidad visual.</p>
+            <p>07/10/25 — Se actualiza el logo y la identidad visual.</p>
           </div>
 
           <div className="timeline-item">

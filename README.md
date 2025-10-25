@@ -41,22 +41,47 @@ Además, incorporamos el consumo de una API pública donde conocerás las pelíc
 
 ---
 
-## Estructura de Archivos
+## Estructura de archivos del proyecto
 
-Codeboltssix-tp2/\
-│\
-├── public/\
-│\
-└── src/\
-├── assets/\
-│ └── img/
-│\
-├── components/ # Componentes principales del sitio\
-│ ├── 
-│ └── jsx\
-│\
-├── 
-├── 
-├── 
-├── 
-└── \
+Ccodeboltssix-tp2/
+│
+├── node_modules/
+│   └── resto de archivos
+│
+├── public/
+│   ├── images/
+│   │   ├── logo.png
+│   │   ├── logooscuro.png
+│   │   ├── neuyin.png
+│   │   ├── erick.png
+│   │   └── resto de imágenes
+│   │        
+│   └── favicon.ico
+│
+├── src/
+│   ├── components/
+│   │   ├── ApiPublica.jsx
+│   │   ├── AppLayout.jsx
+│   │   ├── Bitacora.jsx
+│   │   ├── CardIntegrante.jsx
+│   │   ├── Footer.jsx
+│   │   ├── Home.jsx
+│   │   ├── Json.Data.jsx
+│   │   ├── PerfilErick.jsx
+│   │   ├── PerfilNeuyin.jsx
+│   │   └── Sidebar.jsx
+│   │
+│   ├── data/
+│   │   └── items.json
+│   │
+│   ├── App.css
+│   ├── App.jsx
+│   ├── index.css
+│   └── main.jsx
+│
+├── .gitignore
+├── index.html
+├── package-lock.json
+├── package.json
+├── README.md
+└── vite.config.js
