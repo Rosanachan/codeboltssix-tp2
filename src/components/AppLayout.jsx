@@ -1,5 +1,6 @@
 import { useEffect, useState } from "react";
 import Sidebar from "./Sidebar";
+import Footer from "./Footer"; 
 
 export default function AppLayout({ children }) {
   const [modoOscuro, setModoOscuro] = useState(false);
@@ -15,16 +16,16 @@ export default function AppLayout({ children }) {
 
       <main className="content">
         <div className="toggle-theme">
-          <button
-            onClick={() => setModoOscuro(!modoOscuro)}
-            className="btn"
-          >
+          <button onClick={() => setModoOscuro(!modoOscuro)} className="btn">
             {modoOscuro ? "☀️ Modo Claro" : "🌙 Modo Oscuro"}
           </button>
         </div>
 
         {children}
+
+        <Footer /> 
       </main>
     </div>
   );
 }
+
