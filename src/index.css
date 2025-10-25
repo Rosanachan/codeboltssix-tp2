@@ -24,7 +24,8 @@ body {
   background: var(--color-fondo-claro);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 1.5rem;
+  padding: 1.5rem; 
+  margin: 15px;                    
 }
 
 button,
@@ -397,3 +398,31 @@ body.modo-oscuro .timeline-item:hover {
 
 /* Estilos para Footer */
 
+.site-footer {
+  text-align: center;
+  padding: 1.2rem 0;
+  font-size: 0.9rem;
+  background-color: transparent;
+  color: var(--color-secundario);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, color 0.3s ease;
+  margin-top: auto;
+}
+
+/* Texto principal y secundario */
+.footer-text {
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.footer-sub {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+/* === Modo oscuro === */
+body.modo-oscuro .site-footer {
+  background-color: transparent;
+  color: var(--color-texto-claro);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
+}
