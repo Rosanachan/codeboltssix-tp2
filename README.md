@@ -26,7 +26,7 @@ Cada perfil presenta:
 - Habilidades técnicas y blandas.
 - Películas y música favoritas.
 
-Además, API...
+Además, incorporamos el consumo de una API pública donde conocerás las películas de animé más aclamadas por el público.
 
 ---
 
