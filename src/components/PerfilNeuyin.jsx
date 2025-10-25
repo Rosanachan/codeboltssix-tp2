@@ -3,7 +3,7 @@ export default function PerfilNeuyin() {
     <section>
       <div className="card" style={{textAlign:'center'}}>
         <img
-          src="/img/neuyin_avatar.jpg" /* usa la imagen que tengas en /public/img/ */
+          src="/images/neuyin.png"
           alt="Neuyin"
           width="150"
           height="150"
@@ -11,8 +11,8 @@ export default function PerfilNeuyin() {
         />
         <h1 style={{marginBottom:'0.5rem'}}>Hola, soy Neuyin Herrera 🌸</h1>
         <p style={{fontFamily:'var(--font-alt)'}}>
-          Tengo 35 años, vivo en CABA y tengo facilidad para organizar, decorar y comunicar. Me
-          encanta la estética, el orden, la música y la cultura japonesa. Mi pasatiempo es editar fotos y videos.
+          Tengo 35 años, vivo en CABA y tengo facilidad para organizar, decorar y comunicar.</p>
+          <p>Me encanta la estética, el orden, la música y la cultura japonesa. Mi pasatiempo es editar fotos y videos.
         </p>
       </div>
 
@@ -38,9 +38,9 @@ export default function PerfilNeuyin() {
       <div className="card" style={{marginTop:'1rem'}}>
         <h2>Mi música favorita</h2>
         <ul style={{marginTop:'.5rem'}}>
-          <li>Coldplay</li>
-          <li>Lorde</li>
-          <li>Adele</li>
+          <li>Gojira</li>
+          <li>Rammstein</li>
+          <li>The Killers</li>
         </ul>
       </div>
     </section>

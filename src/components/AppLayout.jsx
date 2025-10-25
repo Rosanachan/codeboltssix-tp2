@@ -17,7 +17,7 @@ export default function AppLayout({ children }) {
       <main className="content">
         <div className="toggle-theme">
           <button onClick={() => setModoOscuro(!modoOscuro)} className="btn">
-            {modoOscuro ? "☀️ Modo Claro" : "🌙 Modo Oscuro"}
+            {modoOscuro ? "☀️ Claro" : "🌙 Oscuro"}
           </button>
         </div>
 

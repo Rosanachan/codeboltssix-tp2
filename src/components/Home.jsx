@@ -61,8 +61,7 @@ export default function Home() {
       <div className="card">
         <h2>🎥 Integrantes</h2>
         <p>
-          Accedé al perfil de cada integrante para conocer más sobre sus
-          intereses y habilidades.
+          Accedé al perfil de cada uno de nosotros para conocer más sobre nuestros intereses y habilidades.
         </p>
 
         <div className="integrantes">
@@ -89,7 +88,7 @@ export default function Home() {
         <h2>🎯 Objetivos</h2>
         <ul>
           <li>Migrar HTML/CSS/JS a componentes React reutilizables.</li>
-          <li>Agregar sección con datos desde JSON local (≥20 objetos).</li>
+          <li>Agregar sección con datos desde JSON local (20 objetos).</li>
           <li>Consumir una API pública y renderizar resultados.</li>
           <li>
             Publicar en Vercel con README y bitácora actualizados.
