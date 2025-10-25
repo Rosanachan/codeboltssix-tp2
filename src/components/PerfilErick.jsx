@@ -3,7 +3,7 @@ export default function PerfilErick() {
     <section>
       <div className="card" style={{textAlign:'center'}}>
         <img
-          src="/img/erick_avatar.jpg"
+          src="/images/erick.png"
           alt="Erick"
           width="150"
           height="150"

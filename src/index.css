@@ -74,6 +74,7 @@ body.modo-oscuro .sidebar { background: #1f1f2b; color: #f1f1f1; }
   justify-content: flex-start;
   z-index: 100;
   transition: all 0.3s ease;
+  border-radius: 20px;
 }
 
 .sidebar .logo {
@@ -228,17 +229,21 @@ body.modo-oscuro .nav a.active {
   color: #fff;
 }
 
-/* === Contenedor de integrantes (Home.jsx) === */
+.home .card {
+  margin-bottom: 1.5rem;
+}
+
+/* Contenedor de integrantes */
 .integrantes {
   display: flex;
   justify-content: center;
   align-items: flex-start;
-  flex-wrap: wrap;        /* permite que bajen si no hay espacio */
-  gap: 2rem;              /* separación entre tarjetas */
+  flex-wrap: wrap;        
+  gap: 2rem;              
   margin-top: 1.5rem;
 }
 
-/* === Tarjeta de integrante === */
+/* Tarjeta de integrante */
 .card-integrante {
   background: var(--color-fondo-claro);
   border-radius: 14px;
@@ -249,25 +254,33 @@ body.modo-oscuro .nav a.active {
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
 
-.card-integrante:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+body.modo-oscuro .card-integrante {
+background: linear-gradient(135deg, var(--color-secundario), var(--color-acento));
 }
 
-/* === Imagen circular === */
+.card-integrante:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 16px 30px rgba(207, 71, 228, 0.15);
+}
+
+/* Imagen circular */
 .card-integrante img {
-  width: 140px;         /* 🔹 más pequeño que antes */
-  height: 140px;
+  width: 200px;        
+  height: auto;
   border-radius: 50%;
   object-fit: cover;
   margin-bottom: 0.8rem;
 }
 
-/* === Nombre e interacción === */
+/* Nombre e interacción */
 .card-integrante h3 {
   margin: 0.3rem 0;
   color: var(--color-secundario);
   font-weight: 600;
+}
+
+body.modo-oscuro .card-integrante h3 {
+  color: var(--color-fondo-claro);
 }
 
 .btn-perfil {
@@ -276,7 +289,8 @@ body.modo-oscuro .nav a.active {
   padding: 0.4rem 0.8rem;
   background: var(--color-acento);
   color: #fff;
-  border-radius: 20px;
+  text-decoration: none;
+  border-radius: 15px;
   font-size: 0.9rem;
   transition: background 0.3s ease;
 }
@@ -285,7 +299,7 @@ body.modo-oscuro .nav a.active {
   background: var(--color-secundario);
 }
 
-/* === Ajuste responsive === */
+/* Ajuste responsive */
 @media (max-width: 768px) {
   .integrantes {
     flex-direction: column;

@@ -94,7 +94,7 @@ export default function Bitacora() {
       <div className="card" style={{ marginTop: "1rem" }}>
         <h4>🎨 Decisiones de Diseño</h4>
         <p>
-          En esta nueva etapa, se optó por un rediseño completo inspirado en el perfil visual de Neuyin,
+          En esta nueva etapa, se optó por un rediseño completo,
           con una paleta pastel de tonos lavanda, violeta y rosa. El estilo general busca ser moderno,
           limpio y agradable, con tipografía <b>Montserrat</b> para los títulos y <b>Roboto</b> para los textos.
           Se mantuvo la idea de coherencia visual, pero con más dinamismo y un enfoque “SPA”.
