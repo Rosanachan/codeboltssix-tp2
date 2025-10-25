@@ -1,10 +1,10 @@
-/* === Paleta base (Neuyin) === */
+/* Paleta base */
 :root {
-  --color-fondo: #efbeec;                 /* rosa pastel */
+  --color-fondo: #d8a8fb;                 
   --color-fondo-claro: #fff;
-  --color-texto-principal: #210635;       /* púrpura oscuro */
-  --color-secundario: #7B337E;            /* morado */
-  --color-acento: #6667AB;                /* lavanda */
+  --color-texto-principal: #210635;       
+  --color-secundario: #7B337E;            
+  --color-acento: #6667AB;                
   --radius: 12px;
   --shadow: 0 4px 12px rgba(0,0,0,0.12);
   --font-main: 'Montserrat', system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
@@ -27,7 +27,6 @@ body {
   padding: 1.5rem;
 }
 
-/* botones “neuyin-like” */
 button,
 .btn {
   background: linear-gradient(135deg, var(--color-secundario), var(--color-acento));
@@ -41,7 +40,7 @@ button,
 }
 button:hover,.btn:hover { transform: translateY(-1px); opacity:.95 }
 
-/* modo oscuro con cielo estrellado */
+/* modo oscuro */
 body.modo-oscuro {
   background: linear-gradient(135deg, #3e3965, #000000);
   color: #f1f1f1;
@@ -59,7 +58,7 @@ body.modo-oscuro .sidebar { background: #1f1f2b; color: #f1f1f1; }
   padding: 2rem;
 }
 
-/* === SIDEBAR MODERNO === */
+/* Estilos Sidebar */
 .sidebar {
   background-color: var(--color-fondo-claro);
   color: var(--color-texto-principal);
@@ -84,6 +83,62 @@ body.modo-oscuro .sidebar { background: #1f1f2b; color: #f1f1f1; }
   text-align: center;
   letter-spacing: 0.5px;
 }
+/* === Logo en la Sidebar === */
+.logo-container {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0.5rem;
+  margin-bottom: 1.5rem;
+}
+
+.logo-img {
+  width: 250px;           
+  height: auto;          
+  object-fit: contain;
+  margin-bottom: 0.3rem;
+  transition: transform 0.3s ease;
+}
+
+.logo-img:hover {
+  transform: scale(1.05); 
+}
+
+.logo-text {
+  font-size: 1.1rem;
+  font-weight: 700;
+  color: var(--color-secundario);
+  text-align: center;
+  letter-spacing: 0.5px;
+}
+
+/* Versión responsive: sidebar */
+@media (max-width: 900px) {
+  .logo-img {
+    width: 60px;
+  }
+  .logo-text {
+    font-size: 1rem;
+  }
+}
+
+.logo-home-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.logo-home-img {
+  width: 350px;      
+  height: auto;
+  transition: opacity 0.4s ease;
+}
+
+body.modo-oscuro .logo-home-img {
+  filter: drop-shadow(0 0 6px rgba(255, 255, 255, 0.2));
+}
 
 /* Botón hamburguesa */
 .menu-toggle {
@@ -98,6 +153,7 @@ body.modo-oscuro .sidebar { background: #1f1f2b; color: #f1f1f1; }
   margin-bottom: 1rem;
   transition: opacity 0.2s ease;
 }
+
 .menu-toggle:hover { opacity: 0.9; }
 
 .nav ul {
@@ -171,8 +227,77 @@ body.modo-oscuro .nav a.active {
   color: #fff;
 }
 
-/*Estilos para items JSON*/
-/* Tarjetas de películas */
+/* === Contenedor de integrantes (Home.jsx) === */
+.integrantes {
+  display: flex;
+  justify-content: center;
+  align-items: flex-start;
+  flex-wrap: wrap;        /* permite que bajen si no hay espacio */
+  gap: 2rem;              /* separación entre tarjetas */
+  margin-top: 1.5rem;
+}
+
+/* === Tarjeta de integrante === */
+.card-integrante {
+  background: var(--color-fondo-claro);
+  border-radius: 14px;
+  box-shadow: var(--shadow);
+  width: 200px;
+  text-align: center;
+  padding: 1rem;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.card-integrante:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.15);
+}
+
+/* === Imagen circular === */
+.card-integrante img {
+  width: 140px;         /* 🔹 más pequeño que antes */
+  height: 140px;
+  border-radius: 50%;
+  object-fit: cover;
+  margin-bottom: 0.8rem;
+}
+
+/* === Nombre e interacción === */
+.card-integrante h3 {
+  margin: 0.3rem 0;
+  color: var(--color-secundario);
+  font-weight: 600;
+}
+
+.btn-perfil {
+  display: inline-block;
+  margin-top: 0.4rem;
+  padding: 0.4rem 0.8rem;
+  background: var(--color-acento);
+  color: #fff;
+  border-radius: 20px;
+  font-size: 0.9rem;
+  transition: background 0.3s ease;
+}
+
+.btn-perfil:hover {
+  background: var(--color-secundario);
+}
+
+/* === Ajuste responsive === */
+@media (max-width: 768px) {
+  .integrantes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-integrante {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+/*Estilos para items JSON - Tarjetas de películas */
 .galeria .card {
   background: var(--color-fondo-claro);
   border-radius: var(--radius);
