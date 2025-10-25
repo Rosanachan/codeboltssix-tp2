@@ -1,16 +1,16 @@
-# Codebolts Six
+# ⚡Codebolts Six
 
-## IFTS29 - Front End - TP2  
+## IFTS29 - Desarrollo Front End - TP2  
 **Grupo 21**
 ---
 ### Integrantes
 
-- **Neuyin Herrera** — *(Neuyin)*  
-- **Erick Romero** — *(Erick)*  
+- 👩‍💻**Neuyin Herrera** — *(Neuyin)*  
+- 👨‍💻**Erick Romero** — *(Erick)*  
 
 ---
 
-## Título del Proyecto
+## 🏷️ Título del Proyecto
 
 **Codebolts Six**  
 En nuestro sitio web conocerás más sobre nosotros y sobre nuestros intereses cinéfilos.
@@ -19,7 +19,7 @@ En nuestro sitio web conocerás más sobre nosotros y sobre nuestros intereses c
 
 ## 📝 Descripción del proyecto
 
-**Codebolts Six** es un proyecto ...  
+**Codebolts Six** es un proyecto académico colaborativo enfocado en el desarrollo de sitios y aplicaciones web modernas. Nació como un equipo creativo dentro de la materia Desarrollo de Sistemas Web (Front End) en el IFTS N°29, con el objetivo de aplicar las tecnologías aprendidas (HTML, CSS, JavaScript y React) en proyectos reales.  
 
 Cada perfil presenta:
 - Información personal y profesional del desarrollador.

@@ -1,19 +1,38 @@
 import { NavLink } from "react-router-dom";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 
 export default function Sidebar() {
   const [open, setOpen] = useState(false);
+  const [isDarkMode, setIsDarkMode] = useState(false);
+
+  // Detecta si el body tiene la clase modo-oscuro
+  useEffect(() => {
+    const observer = new MutationObserver(() => {
+      setIsDarkMode(document.body.classList.contains("modo-oscuro"));
+    });
+    observer.observe(document.body, { attributes: true });
+    return () => observer.disconnect();
+  }, []);
 
   const toggleMenu = () => setOpen(!open);
 
-  return (
+   return (
     <aside className={`sidebar ${open ? "open" : ""}`}>
-      <div className="logo">Frontend2025</div>
+      {/* LOGO Y TÍTULO */}
+      <div className="logo-container">
+        <img
+          src={isDarkMode ? "/images/logooscuro.png" : "/images/logo.png"}
+          alt="Logo Frontend2025"
+          className="logo-img"
+        />
+      </div>
 
-      {/* Botón hamburguesa solo visible en mobile */}
+      {/* BOTÓN HAMBURGUESA (solo móvil) */}
       <button className="menu-toggle" onClick={toggleMenu}>
         {open ? "✕" : "☰"}
       </button>
+
+      {/* MENÚ PRINCIPAL */}
 
       <nav className={`nav ${open ? "show" : ""}`}>
         <ul>
