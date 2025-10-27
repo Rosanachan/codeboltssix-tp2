@@ -42,7 +42,7 @@ Además, incorporamos el consumo de una API pública donde conocerás las pelíc
 ---
 
 ## Estructura de archivos del proyecto
-
+```bash
 Ccodeboltssix-tp2/
 │
 ├── node_modules/
