@@ -12,7 +12,7 @@ export default function PerfilNeuyin() {
             className="foto-perfil"
           />
           <h1 className="titulo-neuyin">Hola, soy Neuyin Herrera 🌸</h1>
-          <p>Tengo 35 años, vivo en CABA y tengo una nena llamada Ágatha.</p>
+          <p>Tengo 35 años, vivo en CABA y tengo una nena llamada Agatha.</p>
           <p>
             Amo el cine y la cultura japonesa. Mi pasatiempo es editar fotos y
             videos.
@@ -31,29 +31,31 @@ export default function PerfilNeuyin() {
             <div className="glass-card">
               <h3>🎬 Edición</h3>
               <p>
-                Desde 2012 tengo como hobbie tomar fotos y grabar videos para
-                crear estilos creativos y narrativos con postproducción.
+                Desde 2012 tengo como hobbie tomar fotos y grabar videos para crear estilos creativos y narrativos con postproducción.
               </p>
             </div>
             <div className="glass-card">
               <h3>🎉 Decoración</h3>
               <p>
-                Puedo pasar horas realizando tareas manuales decorativas. Me
-                gusta darle un toque personal a todo lo que hago.
+                Puedo pasar horas realizando tareas manuales decorativas. Me gusta darle un toque personal a todo lo que hago.
               </p>
             </div>
             <div className="glass-card">
               <h3>💡 Creatividad Digital</h3>
               <p>
-                Diseño, creo animaciones y lo uno a la tecnología para crear
-                proyectos con una estética y dinamismo diferentes.
+                Diseño, creo animaciones y lo uno a la tecnología para crear proyectos con una estética y dinamismo diferentes.
               </p>
             </div>
             <div className="glass-card">
               <h3>🗂️ Organización</h3>
               <p>
-                Soy muy organizada. Agendo mis procesos, mis obligaciones y
-                actividades. Me ha servido para ser puntual y eficiente.
+                Soy muy organizada. Agendo mis procesos, mis obligaciones y actividades. Me ha servido para ser puntual y eficiente.
+              </p>
+            </div>
+            <div className="glass-card">
+              <h3>🧠 Autonomía de aprendizaje</h3>
+              <p>
+                Soy autodidacta, curiosa y perseverante. Siempre busco mejorar y aprender cosas nuevas. 
               </p>
             </div>
           </div>

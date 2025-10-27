@@ -24,8 +24,7 @@ body {
   background: var(--color-fondo-claro);
   border-radius: var(--radius);
   box-shadow: var(--shadow);
-  padding: 1.5rem; 
-                   
+  padding: 1.5rem;           
 }
 
 button,
@@ -53,6 +52,7 @@ body.modo-oscuro .sidebar { background: #1f1f2b; color: #f1f1f1; }
   display: grid;
   grid-template-columns: var(--sidebar-w) 1fr;
   min-height: 100vh;
+  transition: all 0.3s ease;
 }
 
 .content {
@@ -72,9 +72,8 @@ body.modo-oscuro .sidebar { background: #1f1f2b; color: #f1f1f1; }
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
-  z-index: 100;
-  transition: all 0.3s ease;
-  border-radius: 20px;
+  transition: transform 0.3s ease-in-out;
+  z-index: 200;
 }
 
 .sidebar .logo {
@@ -85,7 +84,7 @@ body.modo-oscuro .sidebar { background: #1f1f2b; color: #f1f1f1; }
   text-align: center;
   letter-spacing: 0.5px;
 }
-/* === Logo en la Sidebar === */
+
 .logo-container {
   display: flex;
   align-items: center;
@@ -115,16 +114,6 @@ body.modo-oscuro .sidebar { background: #1f1f2b; color: #f1f1f1; }
   letter-spacing: 0.5px;
 }
 
-/* Versión responsive: sidebar */
-@media (max-width: 900px) {
-  .logo-img {
-    width: 60px;
-  }
-  .logo-text {
-    font-size: 1rem;
-  }
-}
-
 .logo-home-container {
   display: flex;
   justify-content: center;
@@ -148,15 +137,20 @@ body.modo-oscuro .logo-home-img {
   background: linear-gradient(135deg, var(--color-secundario), var(--color-acento));
   color: white;
   border: none;
-  border-radius: 8px;
-  padding: 0.4rem 0.8rem;
-  font-size: 1.2rem;
+  border-radius: 10px;
+  padding: 0.5rem 0.8rem;
+  font-size: 1.5rem;
   cursor: pointer;
-  margin-bottom: 1rem;
-  transition: opacity 0.2s ease;
+  position: fixed;
+  top: 1rem;
+  left: 1rem;
+  z-index: 300;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  transition: opacity 0.3s ease;
 }
-
-.menu-toggle:hover { opacity: 0.9; }
+.menu-toggle:hover {
+  opacity: 0.9;
+}
 
 .nav ul {
   list-style: none;
@@ -185,37 +179,13 @@ body.modo-oscuro .logo-home-img {
   transform: translateX(2px);
 }
 
-/* === RESPONSIVE === */
-@media (max-width: 900px) {
-  .sidebar {
-    height: auto;
-    position: relative;
-    border-right: none;
-    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
-  }
-
-  .menu-toggle {
-    display: block;
-    margin: 0 auto 1rem;
-  }
-
-  .nav {
-    display: none;
-    text-align: center;
-  }
-
-  .nav.show {
-    display: block;
-    animation: fadeIn 0.3s ease;
-  }
+.layout {
+  display: grid;
+  grid-template-columns: var(--sidebar-w) 1fr;
+  min-height: 100vh;
+  transition: all 0.3s ease;
 }
 
-@keyframes fadeIn {
-  from { opacity: 0; transform: translateY(-5px); }
-  to { opacity: 1; transform: translateY(0); }
-}
-
-/* Ajuste modo oscuro */
 body.modo-oscuro .sidebar {
   background: #2b244d;
   border-right: none;
@@ -229,6 +199,76 @@ body.modo-oscuro .nav a.active {
   color: #fff;
 }
 
+/* RESPONSIVE Sidebar */
+@media (max-width: 900px) {
+  .layout {
+    grid-template-columns: 1fr;
+  }
+
+  .sidebar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100%;
+    width: var(--sidebar-w);
+    transform: translateX(-100%);
+    background-color: var(--color-fondo-claro);
+    box-shadow: 2px 0 10px rgba(0,0,0,0.15);
+    border-right: none;
+    z-index: 250;
+  }
+
+  .sidebar.open {
+    transform: translateX(0);
+  }
+
+  .content {
+    padding: 2rem 1.5rem;
+    width: 90%;
+    margin-left: 0;
+  }
+
+  /* Mostrar el botón hamburguesa */
+  .menu-toggle {
+    display: block;
+    position: fixed;
+    top: 1rem;
+    left: 81%;
+    width: 4rem;
+  }
+
+/* === Animación del menú === */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(-5px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+}
+
+@media (max-width: 768px) {
+  .integrantes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-integrante {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .integrantes {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .card-integrante {
+    width: 80%;
+    max-width: 300px;
+  }
+}
+
+/* Estilos para Home */
 .home .card {
   margin-bottom: 1.5rem;
 }
@@ -237,7 +277,6 @@ body.modo-oscuro .nav a.active {
 text-align: center;
 }
 
-/* Contenedor de integrantes */
 .integrantes {
   display: flex;
   justify-content: center;
@@ -267,7 +306,6 @@ background: linear-gradient(135deg, var(--color-secundario), var(--color-acento)
   box-shadow: 0 16px 30px rgba(207, 71, 228, 0.15);
 }
 
-/* Imagen circular */
 .card-integrante img {
   width: 200px;        
   height: auto;
@@ -276,7 +314,6 @@ background: linear-gradient(135deg, var(--color-secundario), var(--color-acento)
   margin-bottom: 0.8rem;
 }
 
-/* Nombre e interacción */
 .card-integrante h3 {
   margin: 0.3rem 0;
   color: var(--color-secundario);
@@ -303,19 +340,6 @@ body.modo-oscuro .card-integrante h3 {
   background: var(--color-secundario);
 }
 
-/* Ajuste responsive */
-@media (max-width: 768px) {
-  .integrantes {
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .card-integrante {
-    width: 80%;
-    max-width: 300px;
-  }
-}
-
 /*Estilos para items JSON - Tarjetas de películas */
 .galeria .card {
   background: var(--color-fondo-claro);
@@ -330,7 +354,6 @@ body.modo-oscuro .card-integrante h3 {
   box-shadow: 0 8px 16px rgba(0, 0, 0, 0.15);
 }
 
-/* Ajuste de imágenes */
 .galeria img {
   box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
   transition: transform 0.3s ease;
@@ -340,7 +363,6 @@ body.modo-oscuro .card-integrante h3 {
   transform: scale(1.05);
 }
 
-/* Modo oscuro */
 body.modo-oscuro .galeria .card {
   background-color: #2b244d;
   color: #f1f1f1;
@@ -414,40 +436,7 @@ body.modo-oscuro .timeline-item:hover {
   transform: translateY(-2px);
 }
 
-/* Estilos para Footer */
-
-.site-footer {
-  text-align: center;
-  padding: 1.2rem 0;
-  font-size: 0.9rem;
-  background-color: transparent;
-  color: var(--color-secundario);
-  border-top: 1px solid rgba(0, 0, 0, 0.1);
-  transition: background 0.3s ease, color 0.3s ease;
-  margin-top: auto;
-}
-
-/* Texto principal y secundario */
-.footer-text {
-  font-weight: 500;
-  margin-bottom: 0.2rem;
-}
-
-.footer-sub {
-  font-size: 0.85rem;
-  opacity: 0.8;
-}
-
-/* === Modo oscuro === */
-body.modo-oscuro .site-footer {
-  background-color: transparent;
-  color: var(--color-texto-claro);
-  border-top: 1px solid rgba(255, 255, 255, 0.15);
-}
-
-/* === PERFIL NEUYIN === */
-/* === PERFIL NEUYIN === */
-
+/* Estilos para PERFIL NEUYIN */
 .perfil-neuyin {
   display: flex;
   flex-direction: column;
@@ -456,7 +445,7 @@ body.modo-oscuro .site-footer {
   padding: 2rem;
 }
 
-/* 🔹 HERO */
+/* Encabezado */
 .hero-content {
   text-align: center;
 }
@@ -473,7 +462,7 @@ body.modo-oscuro .site-footer {
   margin-bottom: 0.5rem;
 }
 
-/* 🔹 HABILIDADES */
+/* Estilos para habilidades */
 .habilidades-contenido {
   display: flex;
   justify-content: space-between;
@@ -507,7 +496,7 @@ body.modo-oscuro .site-footer {
   transform: translateY(-5px);
 }
 
-/* 🔹 PELÍCULAS */
+/* Estilos para Películas  */
 .peliculas {
   display: flex;
   justify-content: space-between;
@@ -570,7 +559,7 @@ body.modo-oscuro .site-footer {
   font-size: 0.9rem;
 }
 
-/* 🔹 MÚSICA */
+/* Estilos para música */
 .spotify-grid {
   display: flex;
   gap: 1.5rem;
@@ -581,4 +570,33 @@ body.modo-oscuro .site-footer {
 .spotify-grid iframe {
   border-radius: 12px;
   box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+/* Estilos para Footer */
+.site-footer {
+  text-align: center;
+  padding: 1.2rem 0;
+  font-size: 0.9rem;
+  background-color: transparent;
+  color: var(--color-secundario);
+  border-top: 1px solid rgba(0, 0, 0, 0.1);
+  transition: background 0.3s ease, color 0.3s ease;
+  margin-top: auto;
+}
+
+/* Texto principal y secundario */
+.footer-text {
+  font-weight: 500;
+  margin-bottom: 0.2rem;
+}
+
+.footer-sub {
+  font-size: 0.85rem;
+  opacity: 0.8;
+}
+
+body.modo-oscuro .site-footer {
+  background-color: transparent;
+  color: var(--color-texto-claro);
+  border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
