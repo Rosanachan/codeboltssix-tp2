@@ -600,3 +600,52 @@ body.modo-oscuro .site-footer {
   color: var(--color-texto-claro);
   border-top: 1px solid rgba(255, 255, 255, 0.15);
 }
+
+/* Estilos para PERFIL ERICK */
+.perfil-erick {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  padding: 2rem;
+}
+
+.titulo-erick {
+  color: var(--color-secundario);
+  margin-bottom: 0.5rem;
+}
+
+/* Estilos para hobbies */
+.hobbies-contenido {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  gap: 2rem;
+}
+
+.hobbies-cards {
+  flex: 1;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  gap: 1.2rem;
+}
+ 
+.glas-card {
+  background: rgba(255, 255, 255, 0.25);
+  border-radius: 15px;
+  padding: 1rem;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(8px);
+  transition: transform 0.3s ease;
+}
+
+.glas-card:hover {
+  transform: translateY(-5px);
+}
+
+.glas-card img {
+  max-width: 100%; 
+  height: auto; 
+  border-radius: 10px; 
+}
